@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.PerfilUsuarioController">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="99.0" style="-fx-background-color: #115d9a;">
+            <children>
+                <Button layoutX="-4.0" layoutY="147.0" mnemonicParsing="false" onAction="#menuPrincipalView" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: #115d9a;" text="Explorar" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="-4.0" layoutY="361.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="30.0" prefWidth="181.0" style="-fx-background-color: #115d9a;" text="Cerrar sesion" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font></Button>
+                <Button layoutX="-1.0" layoutY="111.0" mnemonicParsing="false" onAction="#MisJuegos" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: #115d9a;" text="Mis Juegos" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Line endX="100.0" layoutX="94.0" layoutY="144.0" startX="-100.0" stroke="WHITE" />
+                <Circle fill="WHITE" layoutX="28.0" layoutY="38.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                <QuadCurve controlX="-42.0" controlY="-59.0" endX="-32.0" endY="-27.0" fill="DODGERBLUE" layoutX="70.0" layoutY="82.0" startX="-52.0" startY="-27.0" stroke="WHITE" strokeType="INSIDE" />
+                <Circle fill="DODGERBLUE" layoutX="28.0" layoutY="31.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+                <Line endX="100.0" layoutX="82.0" layoutY="107.0" startX="-100.0" stroke="WHITE" />
+                <Line endX="100.0" layoutX="78.0" layoutY="180.0" startX="-100.0" stroke="WHITE" />
+                <Label alignment="CENTER" layoutX="1.0" layoutY="28.0" prefHeight="30.0" prefWidth="175.0" text="Mi Perfil" textAlignment="RIGHT" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                    <effect>
+                        <DropShadow>
+                            <color>
+                                <Color red="0.7105262875556946" green="0.6480262875556946" blue="0.6480262875556946" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Label>
+                <Line endX="100.0" layoutX="80.0" layoutY="360.0" startX="-100.0" stroke="WHITE" />
+                <QuadCurve controlX="-46.0" controlY="-41.0" endX="-55.0" endY="-23.0" fill="#115d9a" layoutX="88.0" layoutY="408.0" startX="-70.0" startY="-35.0" stroke="WHITE" strokeType="INSIDE" />
+                <Line endX="-93.0" endY="-8.0" layoutX="116.0" layoutY="374.0" startX="-100.0" stroke="WHITE" />
+                <Line endX="-84.0" endY="-8.0" layoutX="100.0" layoutY="383.0" startX="-75.0" startY="-2.0" stroke="WHITE" />
+
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="491.0" styleClass="manana">
+            <children>
+                <Label layoutX="110.0" layoutY="180.0" prefHeight="36.0" prefWidth="86.0" text="Hello-">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="104.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="104.0" layoutY="233.0" prefHeight="36.0" prefWidth="92.0" text="Points: ">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+                <Label fx:id="lblUsername" layoutX="191.0" layoutY="170.0" prefHeight="36.0" prefWidth="160.0" styleClass="titulo" text="Usuario">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Label>
+                <!-- Etiqueta para los puntos del usuario -->
+                <Label fx:id="lblPoints" layoutX="200.0" layoutY="224.0" prefHeight="53.0" prefWidth="175.0" styleClass="titulo" text="0">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Label>
+                <!-- Imagen de la foto de perfil -->
+                <ImageView fx:id="imgFotoPerfil" fitHeight="116.0" fitWidth="110.0" layoutX="143.0" layoutY="50.0" />
+            <Button fx:id="btnActualizarFoto" layoutX="294.0" layoutY="78.0" mnemonicParsing="false" onAction="#Actualizar" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: #115d9a;" text="Actualizar Foto" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="138.0" layoutY="314.0" mnemonicParsing="false" onAction="#ComprarPremium" prefHeight="25.0" prefWidth="124.0" style="-fx-background-color: #ffd700;" text="Vuelvete Premium" textFill="#685c1e">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            </children></AnchorPane>
+    </items>
+</SplitPane>

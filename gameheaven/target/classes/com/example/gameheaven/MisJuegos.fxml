@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.2909698996655518" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.MisJuegoscontroller">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="99.0" style="-fx-background-color: #115d9a;">
+            <children>
+                <Button layoutX="-4.0" layoutY="29.0" mnemonicParsing="false" onAction="#PerfilView" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: #115d9a;" text="Mi Perfil" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="-4.0" layoutY="361.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="30.0" prefWidth="181.0" style="-fx-background-color: #115d9a;" text="Cerrar sesion" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font></Button>
+                <Button layoutX="-1.0" layoutY="149.0" mnemonicParsing="false" onAction="#menuPrincipalView" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: #115d9a;" text="Explorar" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Line endX="100.0" layoutX="94.0" layoutY="144.0" startX="-100.0" stroke="WHITE" />
+                <Circle fill="WHITE" layoutX="28.0" layoutY="38.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                <QuadCurve controlX="-42.0" controlY="-59.0" endX="-32.0" endY="-27.0" fill="DODGERBLUE" layoutX="70.0" layoutY="82.0" startX="-52.0" startY="-27.0" stroke="WHITE" strokeType="INSIDE" />
+                <Circle fill="DODGERBLUE" layoutX="28.0" layoutY="31.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+                <Line endX="100.0" layoutX="82.0" layoutY="107.0" startX="-100.0" stroke="WHITE" />
+                <Line endX="100.0" layoutX="78.0" layoutY="180.0" startX="-100.0" stroke="WHITE" />
+                <Label alignment="CENTER" layoutX="1.0" layoutY="112.0" prefHeight="30.0" prefWidth="175.0" text="Mis Juegos" textAlignment="RIGHT" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                    <effect>
+                        <DropShadow>
+                            <color>
+                                <Color red="0.7105262875556946" green="0.6480262875556946" blue="0.6480262875556946" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </Label>
+                <Line endX="100.0" layoutX="80.0" layoutY="360.0" startX="-100.0" stroke="WHITE" />
+                <QuadCurve controlX="-46.0" controlY="-41.0" endX="-55.0" endY="-23.0" fill="#115d9a" layoutX="88.0" layoutY="408.0" startX="-70.0" startY="-35.0" stroke="WHITE" strokeType="INSIDE" />
+                <Line endX="-93.0" endY="-8.0" layoutX="116.0" layoutY="374.0" startX="-100.0" stroke="WHITE" />
+                <Line endX="-84.0" endY="-8.0" layoutX="100.0" layoutY="383.0" startX="-75.0" startY="-2.0" stroke="WHITE" />
+            <Line endX="100.0" layoutX="280.0" layoutY="117.0" startX="-100.0" />
+
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="443.0" styleClass="manana">
+            <children>
+                <Label layoutX="18.0" layoutY="40.0" prefHeight="32.0" prefWidth="189.0" styleClass="titulo" text="Mis Juegos">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Label>
+            <GridPane fx:id="juegosUs" layoutX="5.0" layoutY="108.0" prefHeight="268.0" prefWidth="405.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="10.0" prefWidth="200.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.0" minWidth="10.0" prefWidth="205.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            </children></AnchorPane>
+    </items>
+</SplitPane>

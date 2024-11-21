@@ -1,0 +1,47 @@
+
+.titulo {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, #87ceeb, 5, 0.8, 0, 0); /* Brillo celeste */
+}
+
+.titulo-noche {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, #1b263b, 5, 0.8, 0, 0); /* Sombra azul oscura */
+}
+
+.titulo-premium {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, #ffd700, 5, 0.8, 0, 0); /* Sombra dorada */
+}
+
+.manana {
+    -fx-background-color: linear-gradient(to bottom, #87ceeb, #ffffff); /* Cielo azul claro */
+}
+
+.noche {
+     -fx-background-color: radial-gradient(
+            center 50% 50%, radius 100%,
+            #0d1b2a, #1b263b
+        );
+}
+
+
+/* Nubes: Noche */
+.nube-noche {
+    -fx-fill: radial-gradient(
+        center 50% 50%, radius 100%,
+        #a3c4dc, #243b55
+    ); /* Azul claro degradado a profundo */
+    -fx-effect: innershadow(gaussian, #1b263b, 7, 0.6, 0, 0); /* Sombra azul oscura */
+}
+
+.nube-manana {
+    -fx-fill: #82c3ff; /* Azul claro */
+    -fx-effect: innershadow(gaussian, white, 5, 0.5, 0, 0); /* Sombra interna blanca */
+}

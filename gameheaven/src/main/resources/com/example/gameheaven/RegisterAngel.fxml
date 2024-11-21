@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.RegisterAngelController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="299.0" style="-fx-background-color: #115d9a;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" layoutX="105.0" layoutY="146.0" prefHeight="0.0" prefWidth="133.0" text="HEAVEN" textFill="WHITE">
+                    <font>
+                        <Font name="JetBrains Mono ExtraBold" size="36.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="-22.0" layoutY="93.0" prefHeight="17.0" prefWidth="191.0" text="Gaming" textFill="WHITE">
+                    <font>
+                        <Font name="JetBrains Mono ExtraBold Italic" size="36.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="354.0" BorderPane.alignment="CENTER">
+            <children>
+                <!-- Título de la pestaña de Registro -->
+                <Label alignment="CENTER" layoutX="65.0" layoutY="20.0" prefHeight="17.0" prefWidth="191.0" text="Registro">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+
+                <!-- Campos de entrada del formulario de registro -->
+                <Label layoutX="20.0" layoutY="60.0" text="Nombre:" />
+                <TextField fx:id="nombreText" layoutX="120.0" layoutY="60.0" promptText="Nombre" />
+
+                <Label layoutX="20.0" layoutY="100.0" text="Apellido:" />
+                <TextField fx:id="apellidoText" layoutX="120.0" layoutY="100.0" promptText="Apellido" />
+
+                <Label layoutX="20.0" layoutY="140.0" text="Correo:" />
+                <TextField fx:id="correoText" layoutX="120.0" layoutY="140.0" promptText="Correo" />
+
+                <Label layoutX="5.0" layoutY="180.0" prefHeight="26.0" prefWidth="115.0" text="Fecha de Nacimiento:" />
+                <DatePicker fx:id="fechaNacimientoPicker" layoutX="122.0" layoutY="180.0" />
+
+                <Label layoutX="20.0" layoutY="220.0" text="Documento:" />
+                <TextField fx:id="documentoText" layoutX="120.0" layoutY="220.0" promptText="Documento" />
+
+                <Label layoutX="20.0" layoutY="260.0" text="Teléfono:" />
+                <TextField fx:id="telefonoText" layoutX="120.0" layoutY="260.0" promptText="Teléfono" />
+
+                <Label layoutX="8.0" layoutY="300.0" text="Nombre de Usuario:" />
+                <TextField fx:id="nombreUsuarioText" layoutX="120.0" layoutY="300.0" promptText="Nombre de Usuario" />
+
+                <Label layoutX="20.0" layoutY="340.0" text="Contraseña:" />
+                <PasswordField fx:id="contrasenaText" layoutX="120.0" layoutY="340.0" promptText="Contraseña" />
+
+                <!-- Botones de registro y regresar -->
+                <Button fx:id="registrarButton" layoutX="59.0" layoutY="370.0" mnemonicParsing="false" onAction="#registrarUsuario" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #115d9a;" text="Registrar" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+
+                <Button fx:id="volverLoginButton" layoutX="183.0" layoutY="370.0" mnemonicParsing="false" onAction="#Login" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #115d9a;" text="Login" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

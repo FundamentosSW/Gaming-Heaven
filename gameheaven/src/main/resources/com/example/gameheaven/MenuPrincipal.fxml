@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="99.0" style="-fx-background-color: #115d9a;" />
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="491.0">
+         <children>
+            <ScrollPane layoutY="115.0" prefHeight="283.0" prefWidth="417.0" AnchorPane.rightAnchor="0.0" />
+            <Label layoutX="25.0" layoutY="23.0" prefHeight="32.0" prefWidth="189.0" text="Explorar">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ChoiceBox layoutX="25.0" layoutY="59.0" prefWidth="150.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
